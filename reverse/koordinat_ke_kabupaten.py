@@ -38,7 +38,7 @@ gdf_joined[kolom_lengkap].rename(columns={
     "NAME_1": "Provinsi",
     "NAME_2": "Kabupaten/Kota",
     "NAME_3": "Kecamatan"
-}).to_excel("data_gempa_dengan_lokasi.xlsx", index=False)
+}).to_excel("data_gempa_dengan_lokasi 2.xlsx", index=False)
 
 # Baris yang gagal dikenali wilayah administratif
 gdf_tidak_terbaca = gdf_joined[gdf_joined["NAME_1"].isna()]
@@ -46,4 +46,4 @@ gdf_tidak_terbaca = gdf_joined[gdf_joined["NAME_1"].isna()]
 # Lihat berapa banyak yang gagal
 print("Jumlah titik yang tidak terbaca wilayahnya:", len(gdf_tidak_terbaca))
 
-print("✅ File berhasil disimpan sebagai: data_gempa_dengan_lokasi.xlsx")
+print("✅ File berhasil disimpan sebagai: data_gempa_dengan_lokasi 2.xlsx")
